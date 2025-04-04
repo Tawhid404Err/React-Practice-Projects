@@ -2,11 +2,30 @@ import Button from "./Components/Button/Button";
 import { MdMessage } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
 import Image_contact from "../public/contact_imgae.svg";
+import { useState } from "react";
 
 const Hero = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(event);
+
+    const nameValue = event.target[0].value;
+    const emailValue = event.target[1].value;
+    const textValue = event.target[2].value;
+
+    setName(nameValue);
+    setEmail(emailValue);
+    setText(textValue);
+
+    if (!nameValue && !emailValue && !textValue) {
+      document.getElementById("resultDisp").style.display = "none";
+    } else {
+      // Show the result if at least one field has a value
+      document.getElementById("resultDisp").style.display = "block";
+    }
   }
 
   return (
@@ -53,6 +72,12 @@ const Hero = () => {
 
             <Button isSubmit={true} text="SUBMIT" />
           </form>
+
+          <div id="resultDisp">
+            <p>{"Name: " + name}</p>
+            <p>{"Email: " + email}</p>
+            <p>{"Text: " + text}</p>
+          </div>
         </div>
 
         <div className="hero_img">

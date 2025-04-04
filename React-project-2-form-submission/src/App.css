@@ -75,3 +75,10 @@ input {
   position: relative;
   width: max-content;
 }
+
+#resultDisp {
+  display: none;
+  margin-bottom: 2rem;
+  border: 2px solid;
+  padding: 0.7rem;
+}
