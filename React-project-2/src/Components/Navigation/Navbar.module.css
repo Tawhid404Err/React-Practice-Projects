@@ -1,0 +1,19 @@
+.navigation {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav_links {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  font-family: "Popins", sans-serif;
+  color: var(--text-color1);
+}

@@ -1,0 +1,28 @@
+.button_style {
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.submit_btn {
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  width: 200px;
+  cursor: pointer;
+  align-self: flex-end;
+}

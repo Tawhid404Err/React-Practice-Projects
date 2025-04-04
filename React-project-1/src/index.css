@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Diphylleia&family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&family=Smooch+Sans:wght@100..900&family=Tektur:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --text-color1: #2e2e2e;
+  --text-color2: #808080;
+  --btn-color: #d01c28;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins", sans-serif;
+}
+
+body {
+  height: max-content;
+}
+
+button {
+  width: 6rem;
+  height: 2.3rem;
+  background-color: var(--btn-color);
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--btn-color);
+    background-color: transparent;
+    border: 1px solid var(--btn-color);
+  }
+}
+
+.uni_box {
+  width: 1280px;
+}
+
+/* Hero section Code */
+
+.hero_wrapper {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.hero_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero_contents h1 {
+  font-size: 108px;
+  line-height: 102px;
+}
+
+.hero_contents p {
+  width: 400px;
+  color: var(--text-color2);
+}
+
+.button_container button {
+  width: 150px;
+}
+
+.button_container button:nth-child(1) {
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--btn-color);
+    background-color: transparent;
+    border: 1px solid var(--btn-color);
+  }
+}
+
+.button_container button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid black;
+  color: var(--text-color2);
+  margin-left: 1rem;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--btn-color);
+  }
+}
+
+.also {
+  color: var(--text-color2);
+}
+
+.partners {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.partners span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    border: 1px solid var(--text-color2);
+  }
+}
